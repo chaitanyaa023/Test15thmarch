@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    title{
-      font-family: Arial;
-    }
     a{
       color: blue;
     }
@@ -30,20 +27,19 @@
     }
     .gallery{
       display:grid;
-      grid-template-rows: (2,1fr);
-      grid-template-columns: (2,1fr);
+      grid-template-columns: repeat(2,1fr);
       gap: 10px;
+      max-width: 300px;
     }
     @media (max-width: 600px){
       .galley{
-        grid-template-rows: (1,1fr);
-        grid-template-columns: (1,1fr);
+        grid-template-columns: 1fr;
       }
     }
     .clickme{
       background-color: blue;
       color: white;
-      transition: background-color 5s ease; 
+      transition: background-color 0.3s ease; 
     }
     .clickme:hover{
       background-color: darkblue;
