@@ -28,6 +28,28 @@
       gap:10px;
       justify-content: center;
     }
+    .gallery{
+      display:grid;
+      grid-template-rows: (2,1fr);
+      grid-template-columns: (2,1fr);
+      gap: 10px;
+    }
+    @media (max-width: 600px){
+      .galley{
+        grid-template-rows: (1,1fr);
+        grid-template-columns: (1,1fr);
+      }
+    }
+    button{
+      background-color: blue;
+      color: white;
+    }
+    button:hover{
+      background-color: darkblue;
+    }
+    button:active{
+      background-color: green;
+    }
   </style>
 </head>
 <body>
@@ -51,5 +73,16 @@
     <a href="#">Link2</a>
     <a href="#">Link3</a>
   </nav>
+  <!--TASK5-->
+  <div class="gallery">
+    <img src="img1.jpg" alt="" style="height: 150px; width: 150px;">
+    <img src="img2.jpg" alt="" style="height: 150px; width: 150px;">
+    <img src="img3.jpg" alt="" style="height: 150px; width: 150px;">
+    <img src="img4.jpg" alt="" style="height: 150px; width: 150px;">
+
+  </div>
+  <br>
+  <!--TASK6-->
+  <button>Click me</button>
 </body>
 </html>
