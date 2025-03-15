@@ -40,15 +40,13 @@
         grid-template-columns: (1,1fr);
       }
     }
-    button{
+    .clickme{
       background-color: blue;
       color: white;
+      transition: background-color 5s ease; 
     }
-    button:hover{
+    .clickme:hover{
       background-color: darkblue;
-    }
-    button:active{
-      background-color: green;
     }
   </style>
 </head>
@@ -83,6 +81,10 @@
   </div>
   <br>
   <!--TASK6-->
-  <button>Click me</button>
+  <button class="clickme">Click me</button>
+  <br>
+  <br>
+  <!--TASK7-->
+  <button>Hover Me</button>
 </body>
 </html>
